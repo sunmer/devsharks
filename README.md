@@ -6,7 +6,7 @@ The code showcases the Vue stack when built with TypeScript. Everything is neatl
 
 🔥 If you find any bugs, open up an issue and I'll look at it asap 🔥
 
-##Features
+## Features
 * Fully implemented in TypeScript
 * VueJS, Vuex, Vue-Router used
 * Vee-Validate for validation
@@ -15,7 +15,7 @@ The code showcases the Vue stack when built with TypeScript. Everything is neatl
 * AXIOS for Ajax requests
 * JSON server for persisting data
 
-##How to install
+## How to install
 
 * Install docker
 * Install JSON server globally - https://github.com/typicode/json-server
