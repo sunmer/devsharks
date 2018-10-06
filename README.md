@@ -4,12 +4,20 @@ This app showcases a service where developers sign up for doing code reviews, an
 
 The code showcases the Vue stack when built with TypeScript. Everything is neatly containerised and shows how to write clean and modular code which is simple to debug.
 
-Concepts which are fully implemented are AJAX requests via Axios,
-VUE template files, form validation via Vee-Validate, dummy JWT authentication
-and hot reloading via Webpack.
+##Features
+* Fully implemented in TypeScript
+* VueJS, Vuex, Vue-Router used
+* Vee-Validate for validation
+* Webpack for watching and building
+* VUE template files with SASS, TypeScript and HTML
+* AXIOS for Ajax requests
+* JSON server for persisting data
+
+##How to install
 
 * Install docker
-* Install JSONServer globally
+* Install JSON server globally - https://github.com/typicode/json-server
 * Run JSONServer with `json-server --watch db.json --routes routes.json`
-* Run `docker-compose up`
+* Go to /web folder and run `npm install`
+* Go to root folder and run `docker-compose up`
 * Access `localhost:8080` to see the app in action
