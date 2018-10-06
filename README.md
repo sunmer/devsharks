@@ -4,6 +4,8 @@ This app showcases a service where developers sign up for doing code reviews, an
 
 The code showcases the Vue stack when built with TypeScript. Everything is neatly containerised and shows how to write clean and modular code which is simple to debug.
 
+🔥 If you find any bugs, open up an issue and I'll look at it asap 🔥
+
 ##Features
 * Fully implemented in TypeScript
 * VueJS, Vuex, Vue-Router used
