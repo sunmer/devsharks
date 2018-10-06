@@ -1,0 +1,39 @@
+$primary: #FF525E;
+$secondary: #16BAC5;
+$btn-primary-hover: #FF636E;
+
+.navbar-nav {
+  .btn-primary {
+    margin-top: 4px;
+  }
+}
+
+.btn-primary {
+  background: $primary;
+  border-color: $primary;
+  border-bottom: 2px solid #ca3942;
+}
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:focus {
+  background-color: $btn-primary-hover !important;
+  border-color: #ca3942;
+}
+
+.btn-outline-primary {
+  border-color: $primary;
+  color: $text-muted;
+}
+.btn-outline-primary:hover,
+.btn-outline-primary:active,
+.btn-outline-primary:focus {
+  background-color: $btn-primary-hover !important;
+  border-color: #ca3942;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+.nav-link:hover {
+  cursor: pointer !important;
+}

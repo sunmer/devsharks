@@ -1,0 +1,40 @@
+@import "./bootstrap/bootstrap";
+@import "overrides";
+
+.tag {
+  padding: 2px 8px 2px 8px;
+  border-radius: 5px;
+  color: $white;
+  display: inline-block;
+  background: $secondary;
+}
+
+.bg-dark {
+  .btn-primary {
+    color: $white;
+  }
+  a {
+    &:not(.btn, .navbar-brand) {
+      color: rgba(255, 255, 255, 0.5);
+    }
+    &:not(.btn, .navbar-brand):hover,
+    &:not(.btn, .navbar-brand):focus {
+      color: $white;
+    }
+  }
+}
+
+.comma-list {
+  list-style-type: none;
+
+  li {
+    display: inline-block;
+  }
+
+  li:not(:last-child) {
+    &:after {
+      content: ", ";
+      white-space: pre;
+    }
+  }
+}

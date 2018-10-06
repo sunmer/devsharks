@@ -1,0 +1,17 @@
+version: "2.1"
+
+services:
+  web:
+    build: ./web
+    volumes:
+      - ./web:/web
+      - /web/node_modules/
+  nginx:
+    image: nginx
+    ports:
+     - "8080:8080"
+    volumes:
+     - ./proxy/conf.d:/etc/nginx/conf.d
+     - ./web/build:/usr/share/nginx/html
+    depends_on:
+     - web
