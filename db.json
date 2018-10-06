@@ -3,5 +3,23 @@
   "organizations": [],
   "talents": [],
   "organization-profiles": [],
-  "assignments": []
+  "assignments": [],
+  "skills": [
+    {
+      "id": 1,
+      "name": "Front-end"
+    },
+    {
+      "id": 2,
+      "name": "Back-end"
+    },
+    {
+      "id": 3,
+      "name": "Architecture"
+    },
+    {
+      "id": 4,
+      "name": "Design"
+    }
+  ]
 }
