@@ -24,7 +24,7 @@ const mutations: MutationTree<ITalentState> = {
 const actions: ActionTree<ITalentState, IState> = {
   createTalent(store: ActionContext<ITalentState, IState>, talent: ITalent) {
     return new Promise((resolve, reject) => {
-      axios.post(API_URL + "/talent", talent)
+      axios.post(API_URL + "/talents", talent)
         .then(function(response) {
           store.commit("setTalent", talent);
           resolve(response.data);
@@ -33,7 +33,7 @@ const actions: ActionTree<ITalentState, IState> = {
   },
   getTalent(store: ActionContext<ITalentState, IState>, userID: number) {
     return new Promise((resolve, reject) => {
-      axios.get(API_URL + "/talent")
+      axios.get(API_URL + "/talents")
         .then(response => {
           if(!response.data.length) {
             reject(new Error("No talent profile was found"));

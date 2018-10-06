@@ -437,7 +437,6 @@ export default class Create extends Vue {
   selectedSkills: Skill[] = [];
   talent: ITalent = {
     userID: undefined,
-    aboutMe: null,
     skills: [],
     availability: {
       daily: [],

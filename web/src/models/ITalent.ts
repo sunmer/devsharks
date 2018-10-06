@@ -25,7 +25,6 @@ interface SelectedSkill {
 
 export interface ITalent extends IBase {
   userID: number;
-  aboutMe: string;
   skills: SelectedSkill[];
   availability: {
     daily: number[],

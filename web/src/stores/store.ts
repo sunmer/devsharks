@@ -16,7 +16,7 @@ export interface IState {
   skills: Skill[]
 }
 
-export const API_URL = "http://api.devsharks.io/v1-staging";
+export const API_URL = "http://127.0.0.1:3000";
 export const USER_STORE = "userStore";
 export const TALENT_STORE = "talentStore";
 export const ORGANIZATION_STORE = "organizationStore";
@@ -49,10 +49,10 @@ const actions: ActionTree<IState, any> = {
   getSkills(store: ActionContext<IState, any>) {
     return new Promise((resolve, reject) => {
       if(store.state.skills.length === 0) {
-        axios.get(API_URL + "/skill?page=1&size=50")
+        axios.get(API_URL + "/skills")
           .then(function(response) {
-            store.commit("setSkills", response.data.data);
-            resolve(response.data.data);
+            store.commit("setSkills", response.data);
+            resolve(response.data);
           }).catch((error) => reject(error));
       } else {
         resolve(store.state.skills);

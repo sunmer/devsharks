@@ -30,7 +30,7 @@ const mutations: MutationTree<IOrganizationState> = {
 const actions: ActionTree<IOrganizationState, IState> = {
   createOrganization(store: ActionContext<IOrganizationState, IState>, organization: IOrganization) {
     return new Promise((resolve, reject) => {
-      axios.post(API_URL + "/organization", organization)
+      axios.post(API_URL + "/organizations", organization)
         .then(function(response) {
           store.commit("setOrganization", response.data);
           resolve(response.data);
@@ -42,7 +42,7 @@ const actions: ActionTree<IOrganizationState, IState> = {
   },
   getOrganization(store: ActionContext<IOrganizationState, IState>, userID: number) {
     return new Promise((resolve, reject) => {
-      axios.get(API_URL + "/organization")
+      axios.get(API_URL + "/organizations")
         .then(response => {
           if(!response.data.length) {
             reject(new Error("No organization was found"));
