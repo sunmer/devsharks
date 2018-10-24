@@ -8,12 +8,12 @@ The code showcases the Vue stack when built with TypeScript. Everything is neatl
 
 ## Features
 * Fully implemented in TypeScript
-* VueJS, Vuex, Vue-Router used
+* Vue, Vuex, Vue-Router used
 * Vee-Validate for validation
 * Webpack for watching and building
-* VUE template files with SASS, TypeScript and HTML
-* AXIOS for Ajax requests
-* JSON server for persisting data
+* Vue template files with SASS, TypeScript and HTML
+* Axios for Ajax requests
+* Json server for persisting data
 
 ## How to install
 
